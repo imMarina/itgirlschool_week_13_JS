@@ -43,7 +43,7 @@ console.log(futureDate);
 //Задание 7
 // Выведите в консоль разницу в днях между futureDate и currentDate
 
-let diffBetweenDates = birthday - futureDate;
+let diffBetweenDates = futureDate - currentDate;
 const daysPassed = Math.floor(diffBetweenDates / (1000 * 60 * 60 * 24));
 console.log(daysPassed);
 
@@ -293,3 +293,12 @@ switch (direction) {
     default:
         console.log('Неизвестный')
 }
+
+
+
+console.log(currentDate); 
+
+let tommorow = new Date("2023-08-07")
+console.log(tommorow)
+
+console.log((tommorow - currentDate) / 1000)
